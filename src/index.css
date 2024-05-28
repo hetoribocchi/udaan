@@ -16,8 +16,8 @@ a{
 }
 .container{
   
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .btn{
   background: white;
@@ -33,10 +33,11 @@ a{
   cursor: pointer;
 }
 .btn.dark-btn{
-  background: #212ea0;
+  background: #3954A4;
   color: white;
 }
 .btn img{
   width: 20px;
   margin-left: 10px;
 }
+

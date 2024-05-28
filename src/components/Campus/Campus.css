@@ -1,15 +1,37 @@
-.campus{
+.campus {
     margin: 80px auto;
     width: 90%;
     text-align: center;
 }
-.gallery{
+
+.gallery {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
-.gallery img{
-    width: 23%;
+
+.gallery img {
+    width: 30%;
     border-radius: 10px;
+
+}
+
+.gallery p {
+    display: inline-block;
+}
+
+.galary-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.galary-text span {
+    align-items: center;
+    width: 30%;
+    font-size: 16px;
+    font-weight: 700;
+
 }
