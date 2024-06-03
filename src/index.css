@@ -41,3 +41,14 @@ a{
   margin-left: 10px;
 }
 
+/* mediea quiry */
+@media (max-width: 1000px){
+    .container{
+      padding-left: 3%;
+      padding-right: 3%
+    }
+    .btn{
+      padding: 14px 22px ;
+    }
+}
+

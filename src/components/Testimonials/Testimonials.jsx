@@ -66,6 +66,7 @@ const slideBackward = ()=>{
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente animi molestias fugiat explicabo hic mollitia numquam reiciendis, consequuntur qui doloribus. Aut nesciunt maiores eligendi a eius non exercitationem tenetur magni?</p>
             </div>
         </li>
+        
         </ul>
       </div>
     </div>

@@ -1,4 +1,16 @@
 import React from 'react'
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element:{},
+  },])
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Programs from './components/Programs/Programs'
@@ -25,6 +37,7 @@ const App = () => {
         <Title subTitle='Contact us' title='Intrested in a course?'/>
         <Contact/>
         <Fotter/>
+
       </div>
     </div>
 

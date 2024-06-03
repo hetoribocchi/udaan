@@ -44,3 +44,17 @@
     opacity: 1;
     padding-top: 0;
 }
+
+/* media quiry */
+@media (max-width: 650px) {
+    .programs{
+        flex-direction: column;
+    }
+    .programs{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+    .program{
+        padding-bottom: 20px;
+    }
+}

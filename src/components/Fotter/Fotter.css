@@ -12,3 +12,16 @@
     display: inline-block;
     margin-left: 20px;
 }
+/* media quiry */
+@media (max-width:600px) {
+    .fotter{
+        display: block;
+        text-align: center;
+    }
+    .fotter ul li {
+        margin: 10px;
+    }
+    .fotter ul {
+        margin-top: 10px;
+    }
+}
