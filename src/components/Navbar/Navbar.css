@@ -1,6 +1,6 @@
 nav {
     width: 100%;
-    /* background-color: #333; */
+    background-color: #C3262B;
     color: white;
     padding: 4px 0;
     position: fixed;
@@ -23,35 +23,53 @@ nav ul li {
     font-size: 16px;
 }
 .dark-nav{
-    background: #C3262B;
+    background: #3954A4;
     transition: 0.5s;
 }
 .menu-icon {
     display: none;
 }
 
+  .btn-active{
+    color: #C3262B;
+  }
+  .active {
+    align-items: center;
+    box-shadow: 0px 0px 2px 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: white;
+    color: #C3262B;
+  }
+  .active {
+    box-shadow: 0px 0px 2px 0px;
+    box-sizing: border-box;
+    padding: 4px 4px;
+    border-radius: 10px;
+    background: white;
+    color: #C3262B;
+  }
+
 /* mediea quiry */
 @media (max-width: 1150px){
+    
     .logo{
         width: 140px;
     }
     nav ul li {
-        margin: 5 px 5px;
+        margin: 7 px 7 px;
     }
-    .btn{
-        padding: 10px 20px;
-    }
+    
 }
 @media (max-width: 1020px){
     .logo{
         width: 140px;
     }
+    
     nav ul li {
         margin: 5px 5px;
     }
-    .btn{
-        padding: 10px 20px;
-    }
+    
 }
 @media (max-width: 840px){
     nav{
@@ -80,5 +98,8 @@ nav ul li {
     }
     .hide-mobile-menu{
         right: -200px;
+    }
+    .active{
+        color: #3954A4;
     }
 }

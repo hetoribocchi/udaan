@@ -1,0 +1,42 @@
+.diploma{
+    display: flex;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    width: 90%;
+    
+}
+.diploma-img{
+    width: 50%;
+
+}
+.diploma-img img {
+    width: 600px;
+}
+
+
+.diploma-caption{
+    width: 50%;
+}
+.diploma-caption h2 {
+    font-size: 64px;
+    font-weight: 700;
+    font-variant-caps: all-petite-caps;
+    margin-bottom: 1rem;
+}
+.diploma-caption p {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    padding-bottom: 10px;
+    
+}
+.diploma-caption ul li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    list-style: number;
+}
+.diploma-caption ul {
+    margin-top: 10px;
+}

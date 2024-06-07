@@ -1,44 +1,43 @@
 import React from 'react'
 import { createRoot } from "react-dom/client";
+import Home from './Pages/Home/Home'
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
   Link,
 } from "react-router-dom";
+import ApplyNow from './Pages/ApplyNow/ApplyNow';
+import Campus from './components/Campus/Campus';
+import StudyAbroad from './Pages/StudyAbroad/StudyAbroad';
+import ProgramPage from './Pages/ProgramePage/ProgramPage';
+import AboutUs from './Pages/AboutUs/AboutUs';
 const router = createBrowserRouter([
   {
     path: "/",
-    element:{},
-  },])
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Programs from './components/Programs/Programs'
-import Title from './components/Title/Title'
-import About from './components/About/About'
-import Campus from './components/Campus/Campus'
-import Testimonials from './components/Testimonials/Testimonials'
-import Contact from './components/Contact/Contact'
-import Fotter from './components/Fotter/Fotter'
+    element: <Home/>,
+  },{
+    path: "/apply-now",
+    element: <ApplyNow/>,
+  },{
+    path: "/study-abroad",
+    element: <StudyAbroad/>,
+  },{
+    path: "/programs",
+    element: <ProgramPage/>,
+  },{
+    path: "/about-us",
+    element: <AboutUs/>,
+  },
+])
+
+  
+
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <div className='container'>
-        <Title className="program-title" subTitle='What we offer ' title='Our Programs'/>
-      <Programs/>
-        <About/>
-        <Title subTitle='Study Abroad' title='Study in the best universities of the World'/>
-        <Campus/>
-        <Title subTitle='Testimonials ' title='What our Students says about us'/>
-        <Testimonials/>
-        <Title subTitle='Contact us' title='Intrested in a course?'/>
-        <Contact/>
-        <Fotter/>
-
-      </div>
+      <RouterProvider router={router} />
     </div>
 
   )

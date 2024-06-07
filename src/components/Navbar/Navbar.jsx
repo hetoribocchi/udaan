@@ -3,6 +3,7 @@ import './Navbar.css'
 import logo from "../../assets/udaan-logo.png"
 import { useState } from 'react'
 import menu_icon from '../../assets/menu-icon.png'
+import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
@@ -15,28 +16,30 @@ const Navbar = () => {
     mobileMenu? setMobileMenu(false): setMobileMenu(true)
   }
   let menuRef = useRef()
-  useEffect(()=>{
-    document.addEventListener("mousedown",(event)=>{
-      if (!menuRef.current.contains(event.target))
-        {
+ useEffect(()=>{
+  let handler = (e)=>{
+    if (!menuRef.current.contains(e.target)) {
       setMobileMenu(false)
+      console.log(menuRef.current);
     }
-    })
-  })
+  }
+  document.addEventListener("mousedown",handler)
+ }
+)
 
   return (
-    <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
+    <nav className={`container ${sticky ? 'dark-nav' : ''}`} ref={menuRef}>
       <img src={logo} alt="" className='logo' />
-      <ul ref={menuRef} className={mobileMenu? '': "hide-mobile-menu"}>
-        <li>Home</li>
-        <li>Program</li>
-        <li>About us</li>
-        <li>Campus</li>
-        <li>Testomonials</li>
-        <li><button className='btn'>Contact us</button></li>
-        <li><button className='btn'> Apply Now </button></li>
+      <ul className={mobileMenu? '': "hide-mobile-menu"}>
+        <li><NavLink className={(e)=>{return e.isActive? "active": ""} } to = "/"> Home</NavLink></li>
+        <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/programs"> Program</NavLink></li>
+        <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/about-us">About us</NavLink></li>
+         <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/study-abroad">Study Abroad</NavLink></li>
+        <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/testimonials">Testomonials</NavLink></li>
+         <li><button className='btn'><NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/contact-us">Contact us</NavLink> </button></li>
+          <li><button className='btn'> <NavLink className={(e)=>{return e.isActive? "btn-active": ""}} to = "/apply-now">Apply Now </NavLink></button></li>
       </ul>
-      <img src={menu_icon} alt="" className='menu-icon' onClick={toogleMenu} />
+       <img src={menu_icon} alt="" className='menu-icon' onClick={toogleMenu}  />
     </nav>
   )
 }
