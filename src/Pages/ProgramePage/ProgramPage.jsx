@@ -15,10 +15,10 @@ const ProgramPage = () => {
       <div>
       <Navbar/>
       </div>
-      <div className='diploma'>
-            <div className='diploma-img'>
+      <div className='courses'>
+            <div className='courses-img'>
                 <img src={program_1} alt="" /></div>
-                <div className='diploma-caption'>
+                <div className='courses-caption'>
                     <h2>Diploma</h2>
                     <p>
                     A diploma program is a type of educational program offered by various institutions, such as colleges, universities, vocational schools, or technical institutes. These programs typically provide specialized training and education in a specific field or industry.
@@ -39,13 +39,21 @@ const ProgramPage = () => {
                     </p>
                     <button className= 'btn dark-btn'> <Link to = '/apply-now'> Apply Now </Link> </button> 
                 </div></div> 
-                <div className='bachelors'>
-                  <div>
-                    <img src={program_2} alt="" />
-                    <div>
+                <div className='courses'>
+                  <div className='courses-img'>
+                    <img src={program_2} alt="" /></div>
+                    <div className='courses-caption'>
                       <h2>Bachelros</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore tempore sapiente adipisci veniam quis dignissimos? Sit, deserunt dolore aliquam ut veniam ipsa labore placeat aliquid, error sequi debitis. Dignissimos.</p>
-                    </div>
+                      <p>A bachelor's degree is an exciting opportunity for international students to pursue higher education and expand their academic horizons. Offered by universities and colleges worldwide, a bachelor's degree program typically spans three to four years and provides in-depth study in a specific field of interest.
+
+International students can choose from a wide range of bachelor's degree programs, including disciplines such as arts, sciences, engineering, business, humanities, social sciences, and more. Each program offers a unique curriculum designed to equip students with essential knowledge, skills, and competencies relevant to their chosen field.
+
+Studying for a bachelor's degree abroad provides numerous benefits for international students. It offers the opportunity to immerse oneself in a new culture, engage with diverse perspectives, and build a global network of peers and mentors. Additionally, many universities and colleges offer support services tailored specifically for international students, including language assistance, academic advising, and cultural integration programs.
+
+Completing a bachelor's degree opens doors to a wide range of opportunities. Graduates can pursue various career paths, enter the workforce, or continue their education with advanced degrees such as master's or doctoral programs. Additionally, a bachelor's degree is often a prerequisite for many professional roles, providing a solid foundation for future success.
+
+Overall, pursuing a bachelor's degree as an international student is an enriching and transformative experience. It not only provides academic and career advancement but also fosters personal growth, cultural exchange, and lifelong connections with peers from around the world.".</p>
+                    
                   </div>
                 </div>
           
