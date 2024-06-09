@@ -51,6 +51,11 @@ a{
     .btn{
       padding: 6px 14px ;
     }
+    .btn.dark-btn{
+      background: #3954A4;
+      color: white;
+      font-size: 10px;
+    }
 }
 @media (max-width: 1020px){
     .container{
@@ -59,6 +64,21 @@ a{
     }
     .btn{
       padding: 8px 16px ;
+    }
+}
+@media (max-width: 768px){
+    .container{
+      padding-left: 2%;
+      padding-right: 2%
+    }
+    .btn{
+      padding: 8px 14px ;
+      font-size: 12px;
+    }
+    .btn.dark-btn{
+      background: #3954A4;
+      color: white;
+      font-size: 12px;
     }
 }
 
