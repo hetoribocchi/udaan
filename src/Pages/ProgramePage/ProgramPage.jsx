@@ -10,6 +10,7 @@ import program_icon_2 from '../../assets/program-icon-2.png'
 import program_icon_3 from '../../assets/program-icon-3.png'
 import program_4 from '../../assets/program-4.png'
 import { Link } from 'react-router-dom'
+import Fotter from '../../components/Fotter/Fotter'
 const ProgramPage = () => {
   const [colapse, setColapse] = useState(false)
   function showText() {
@@ -26,7 +27,7 @@ const ProgramPage = () => {
     setColapse2(false)
   }
   return (
-    <div>
+    <div className='container'>
       <div>
       <Navbar/>
       </div>
@@ -142,6 +143,7 @@ const ProgramPage = () => {
                 <div className='btn-apply'> <button className= 'btn dark-btn'> <Link to = '/apply-now'> Apply Now </Link> </button> </div>
             </div>
           </div>
+          <Fotter/>
       </div>
   )
 }
