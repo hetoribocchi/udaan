@@ -4,6 +4,7 @@ import logo from "../../assets/udaan-logo.png"
 import { useState } from 'react'
 import menu_icon from '../../assets/menu-icon.png'
 import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
@@ -34,10 +35,16 @@ const Navbar = () => {
         <li><NavLink className={(e)=>{return e.isActive? "active": ""} } to = "/"> Home</NavLink></li>
         <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/programs"> Program</NavLink></li>
         <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/about-us">About us</NavLink></li>
-         <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/study-abroad">Study Abroad</NavLink></li>
+         <li className='study-abroad'> Study Abroad 
+         <ul className='sub-nav'>
+          <li> <Link> CANADA</Link></li>
+          <li> <Link> UK</Link></li>
+          <li> <Link> USA</Link></li>
+          <li> <Link> AUSTRALIA</Link></li>
+         </ul></li>
         <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/testimonials">Testomonials</NavLink></li>
-         <li><button className='btn'><NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/contact-us">Contact us</NavLink> </button></li>
-          <li><button className='btn'> <NavLink className={(e)=>{return e.isActive? "btn-active": ""}} to = "/apply-now">Apply Now </NavLink></button></li>
+         <li><NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/contact-us">Contact us</NavLink> </li>
+          <li><NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/apply-now">Apply Now </NavLink></li>
       </ul>
        <img src={menu_icon} alt="" className='menu-icon' onClick={toogleMenu}  />
     </nav>

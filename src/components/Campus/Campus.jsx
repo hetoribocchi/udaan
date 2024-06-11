@@ -8,17 +8,17 @@ const Campus = () => {
   return (
     <div className='campus'>
       <div className="gallery">
-        <img src={study_canada} alt="" />
-        <img src={study_usa} alt="" />
-        <img src={study_uk} alt="" />
-        <img src={study_uk} alt="" />
+        <div className='gallery-com'>
+          <img src={study_canada} alt="" />
+        <p> STUDY IN CANADA</p>
+        </div>
+        <div className='gallery-com'><img src={study_usa} alt="" />
+        <p> STUDY IN USA</p></div>
+        <div className='gallery-com'><img src={study_uk} alt="" />
+        <p> STUDY IN UK</p></div>
+        <div className='gallery-com'><img src={study_uk} alt="" />
+        <p> STUDY IN Australia</p></div>
       </div>
-        <div className='galary-text'>
-          <span><p> STUDY IN CANADA</p></span>
-          <span><p> STUDY IN USA</p></span>
-          <span><p> STUDY IN UK</p></span>
-          <span><p> STUDY IN Australia</p></span>
-          </div>
       <button className='btn dark-btn'>See more Here <img src=
         {white_arrow} alt="" /></button>
 

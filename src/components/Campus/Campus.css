@@ -5,47 +5,45 @@
 }
 
 .gallery {
-    display: flex;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
     margin-bottom: 10px;
 }
+.gallery-com{
+    max-width: 100%;
+}
+.gallery-com p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3954A4;
+    text-transform: uppercase;
+}
 
-.gallery img {
-    width: 23%;
+.gallery-com img {
+    width: 100%;
     border-radius: 10px;
 
 }
 
-.gallery p {
-    display: inline-block;
-}
 
-.galary-text {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
 
-.galary-text span {
-    align-items: center;
-    width: 23%;
-    font-size: 16px;
-    font-weight: 700;
 
-}
 /* medeia quiry */
 @media (max-width:800px){
     .gallery{
         flex-wrap: wrap;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(2, 45%);
     }
-    .gallery img {
-        width: 48%;
-        margin-bottom: 25px;
-    }
-    .galary-text{
-        display: none;
-    }
+    .gallery-com  {
+        margin-bottom: 10px;
+    } 
+    .gallery-com p {
+        font-size: 18px;
+    } 
+
 
 }

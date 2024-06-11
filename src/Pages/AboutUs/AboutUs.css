@@ -118,4 +118,40 @@ video {
    .box1 p {
     font-size: 13px;
    }
+   .our-service{
+    grid-template-rows: repeat(3, minmax(250px, 40%));
+    grid-template-columns: repeat(2, minmax(250px, 40%));
+   }
+}
+@media (max-width:768px) {
+    .box1{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+    .vid{
+        order: 2;
+    }
+    .text{
+        order: 1;
+    }
+   video{
+    max-width: 90%;
+    float: none;
+    margin-top: 10px;
+    
+   }
+  
+   .box1 h1{
+    font-size: 20px;
+    padding-bottom: 6px;
+   }
+   .box1 p {
+    font-size: 13px;
+   }
+   .our-service{
+    grid-template-rows: repeat(6, minmax(300px, 90%));
+    grid-template-columns: repeat(1, minmax(300px, 90%));
+   }
 }
