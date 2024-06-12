@@ -37,7 +37,7 @@ const Navbar = () => {
         <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/about-us">About us</NavLink></li>
          <li className='study-abroad'> Study Abroad 
          <ul className='sub-nav'>
-          <li> <Link> CANADA</Link></li>
+          <li> <Link to= "/canada"> CANADA</Link></li>
           <li> <Link> UK</Link></li>
           <li> <Link> USA</Link></li>
           <li> <Link> AUSTRALIA</Link></li>

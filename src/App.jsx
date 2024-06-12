@@ -12,6 +12,7 @@ import Campus from './components/Campus/Campus';
 import StudyAbroad from './Pages/StudyAbroad/StudyAbroad';
 import ProgramPage from './Pages/ProgramePage/ProgramPage';
 import AboutUs from './Pages/AboutUs/AboutUs';
+import Canada from './Pages/Canada/Canada';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,15 +20,17 @@ const router = createBrowserRouter([
   },{
     path: "/apply-now",
     element: <ApplyNow/>,
-  },{
-    path: "/study-abroad",
-    element: <StudyAbroad/>,
-  },{
+  },
+  {
     path: "/programs",
     element: <ProgramPage/>,
   },{
     path: "/about-us",
     element: <AboutUs/>,
+  },
+  {
+    path: "/canada",
+    element: <Canada/>,
   },
 ])
 
