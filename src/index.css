@@ -49,12 +49,12 @@ a{
       padding-right: 3%
     }
     .btn{
-      padding: 6px 14px ;
+      padding: 8px 16px ;
     }
     .btn.dark-btn{
       background: #3954A4;
       color: white;
-      font-size: 10px;
+      font-size: 15px;
     }
 }
 @media (max-width: 1020px){

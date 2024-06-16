@@ -29,7 +29,7 @@ const Navbar = () => {
 )
 
   return (
-    <nav className={`container ${sticky ? 'dark-nav' : ''}`} ref={menuRef}>
+    <nav className={`container ${sticky ? 'small-nav' : ''}`} ref={menuRef}>
       <img src={logo} alt="" className='logo' />
       <ul className={mobileMenu? '': "hide-mobile-menu"}>
         <li><NavLink className={(e)=>{return e.isActive? "active": ""} } to = "/"> Home</NavLink></li>
@@ -38,11 +38,11 @@ const Navbar = () => {
          <li className='study-abroad'> Study Abroad 
          <ul className='sub-nav'>
           <li> <Link to= "/canada"> CANADA</Link></li>
-          <li> <Link> UK</Link></li>
-          <li> <Link> USA</Link></li>
-          <li> <Link> AUSTRALIA</Link></li>
+          <li> <Link to="/uk"> UK</Link></li>
+          <li> <Link to='/usa'> USA</Link></li>
+          <li> <Link to='/australia'> AUSTRALIA</Link></li>
          </ul></li>
-        <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/testimonials">Testomonials</NavLink></li>
+        <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/test-preparation">Test Preparation</NavLink></li>
          <li><NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/contact-us">Contact us</NavLink> </li>
           <li><NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/apply-now">Apply Now </NavLink></li>
       </ul>

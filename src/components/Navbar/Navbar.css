@@ -13,7 +13,8 @@ nav {
 }
 
 .logo {
-    width: 180px;
+    width: 250px;
+    transition: 0.5s;
 }
 
 nav ul li {
@@ -29,8 +30,10 @@ nav ul li:hover {
     color: #3954A4;
     transition: all 0.2s;
 }
-.dark-nav{
-    background: #C3262B;
+.small-nav{
+    .logo{
+        width: 150px;
+    }
     transition: 0.5s;
 }
 .menu-icon {
@@ -92,7 +95,7 @@ nav ul li:hover:after{
 @media (max-width: 1150px){
     
     .logo{
-        width: 140px;
+        width: 180px;
     }
     nav ul li {
         margin: 7 px 7 px;
@@ -106,7 +109,7 @@ nav ul li:hover:after{
 }
 @media (max-width: 1056px){
     .logo{
-        width: 140px;
+        width: 180px;
     }
     
     nav ul li {
