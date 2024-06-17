@@ -3,6 +3,7 @@ import './Campus.css'
 import study_canada from '../../assets/study-canada.jpg'
 import study_usa from '../../assets/study-usa.jpg'
 import study_uk from '../../assets/study-uk.jpg'
+import study_australia from '../../assets/study-australia-2.png'
 import white_arrow from '../../assets/white-arrow.png'
 import { Link } from 'react-router-dom'
 const Campus = () => {
@@ -17,7 +18,7 @@ const Campus = () => {
         <p> STUDY IN USA</p></div></Link>
         <Link to="/uk"><div className='gallery-com'><img src={study_uk} alt="" />
         <p> STUDY IN UK</p></div></Link>
-        <Link to="/australia"><div className='gallery-com'><img src={study_uk} alt="" />
+        <Link to="/australia"><div className='gallery-com'><img src={study_australia} alt="" />
         <p> STUDY IN Australia</p></div></Link>
       </div>
 
