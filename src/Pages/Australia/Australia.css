@@ -154,8 +154,37 @@
     .option-text-dark {
         max-width: 90%;
     }
+
+.background-australia-text h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+.background-australia-text h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+.background-australia-text p{
+    font-size: 16px;
+    
+}
+.background-australia{
+    margin-top: 50px;
+}
 }
 @media (max-width: 678px) {
-
-    
+    .background-australia{
+        margin-top: 70px;
+    }
+    .background-australia-text p{
+        font-size: 12px;
+        
+    }
+    .background-australia-text h1{
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 5px;
+    }
+    .background-australia-text{
+        max-width: 90%;
+    }
 }
