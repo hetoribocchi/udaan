@@ -14,10 +14,14 @@ import ProgramPage from './Pages/ProgramePage/ProgramPage';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import Canada from './Pages/Canada/Canada';
 import { UK } from './Pages/UK/UK';
-import TestPreparation from './Pages/TestPreparation/TestPreparation';
 import { USA } from './Pages/USA/USA';
 import Australia from './Pages/Australia/Australia';
 import ContactUs from './Pages/ContactUs/ContactUs';
+import IELTS from './Pages/TestPreparation/IELTS/IELTS';
+import PTE from './Pages/TestPreparation/PTE/PTE';
+import SAT from './Pages/TestPreparation/SAT/SAT';
+import TOEFL from './Pages/TestPreparation/TOEFL/TOEFL';
+import GRE from './Pages/TestPreparation/GRE/GRE';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,10 +34,7 @@ const router = createBrowserRouter([
     path: "/programs",
     element: <ProgramPage/>,
   },
-  {
-    path: "/test-preparation",
-    element: <TestPreparation/>,
-  },
+  
   {
     path: "/contact-us",
     element: <ContactUs/>,
@@ -57,6 +58,26 @@ const router = createBrowserRouter([
   {
     path: "/australia",
     element: <Australia/>,
+  },
+  {
+    path: "/IELTS",
+    element: <IELTS/>,
+  },
+  {
+    path: "/PTE",
+    element: <PTE/>,
+  },
+  {
+    path: "/SAT",
+    element: <SAT/>,
+  },
+  {
+    path: "/TOEFL",
+    element: <TOEFL/>,
+  },
+  {
+    path: "/GRE",
+    element: <GRE/>,
   },
 ])
 

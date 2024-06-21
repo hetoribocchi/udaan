@@ -37,12 +37,19 @@ const Navbar = () => {
         <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/about-us">About us</NavLink></li>
          <li className='study-abroad'> Study Abroad 
          <ul className='sub-nav'>
-          <li> <Link to= "/canada"> CANADA</Link></li>
-          <li> <Link to="/uk"> UK</Link></li>
-          <li> <Link to='/usa'> USA</Link></li>
-          <li> <Link to='/australia'> AUSTRALIA</Link></li>
+          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to= "/canada"> CANADA</NavLink></li>
+          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to="/uk"> UK</NavLink></li>
+          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to='/usa'> USA</NavLink></li>
+          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to='/australia'> AUSTRALIA</NavLink></li>
          </ul></li>
-        <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/test-preparation">Test Preparation</NavLink></li>
+        <li className='test-preparation'> Test Preparation
+        <ul className='test-sub-nav'>
+          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to= "/IELTS"> IELTS</NavLink></li>
+          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to="/PTE"> PTE</NavLink></li>
+          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to='/TOEFL'> TOEFL</NavLink></li>
+          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to='/SAT'> SAT</NavLink></li>
+          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to='/GRE'> GRE</NavLink></li></ul>
+        </li>
          <li><NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/contact-us">Contact us</NavLink> </li>
           <li><NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/apply-now">Apply Now </NavLink></li>
       </ul>
