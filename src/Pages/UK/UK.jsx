@@ -3,6 +3,8 @@ import Navbar from '../../components/Navbar/Navbar'
 import study_in_uk from '../../assets/study-in-uk.jpg'
 import uk_info_1 from '../../assets/uk-info-1.jpg'
 import uk_info_2 from '../../assets/uk-qualification.jpg'
+import uk_info_3 from '../../assets/uk-process.jpg'
+
 import './UK.css'
 import { Link } from 'react-router-dom'
 import Fotter from '../../components/Fotter/Fotter'
@@ -59,7 +61,7 @@ export const UK = () => {
       </div>
       <div className='uk'>
       <div className='uk-info'>
-        <img src={uk_info_1} alt="" />
+        <img src={uk_info_3} alt="" />
         <div className='info-text'>
           <h3>Application process to study in Uk</h3>
           <p>

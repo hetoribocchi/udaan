@@ -65,9 +65,10 @@
 .why-usa{
     max-width: 100%;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     background-color: #e4e4e4 ;
     margin-bottom: 1rem;
+    margin: 0 auto;
 }
 
 .why-usa-img {
@@ -97,7 +98,7 @@
     padding-bottom: 1rem;
 }
 
-.info-usa{
+.info-usa {
     display: flex;
     margin-bottom: 2rem;
     justify-content: center;
@@ -108,7 +109,7 @@
     max-width: 35%;
     margin-left: auto;
 }
-.info-usa-img img{
+.info-usa-img img {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -131,3 +132,99 @@
     padding-bottom: 1rem;
 }
 /* media quiry */
+@media (max-width: 1024px) {
+    .background-usa{
+        margin-top: 40px;
+    }
+.background-usa-text{
+    max-width: 80%;
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+.why-usa-img {
+    max-width: 45%;
+}
+.info-usa-img{
+    max-width: 40%;
+    img{
+        max-width: 100%;
+    }
+}
+}
+@media (max-width: 840px){
+    .background-usa{
+        margin-top: 70px;
+        aspect-ratio: 7/5;
+    }
+    .background-usa-text{
+        max-width: 90%;
+        h1{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        h2{
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    .usa{
+        h1{
+            font-size: 24px;
+        }}
+
+    .usa-dark{
+        h1{
+            font-size: 24px;
+        }
+    }
+    .why-usa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .why-usa-img{
+        max-width: 90%;
+        margin: 6px auto;
+        order: 1;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .why-usa-img img {
+            max-width: 100%;
+            padding: 0;
+            float: none;
+            margin: 0 auto;
+            
+         
+    }
+    .why-usa-text{
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+    .info-usa {
+        flex-direction: column;
+    }
+    .info-usa-img{
+        max-width: 90%;
+        margin: 6px auto;
+        order: 2;
+        align-items: center;
+    }
+    .info-usa-img img{
+        max-width: 100%;
+       
+    }
+    .info-usa-text {
+        max-width: 90%;
+        margin: 6px auto;
+    }
+}
