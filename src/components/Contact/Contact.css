@@ -9,6 +9,8 @@
 .contact-col {
     flex-basis: 48%;
     color: #3954A4;
+    align-items: center;
+    margin: auto;
 }
 .contact-col h3 {
     color: #C3262B;
@@ -32,10 +34,16 @@
     align-items: center;
     margin: 20px 0;
 }
+
 .contact-col ul li img {
     width: 25px;
     margin-right: 10px;
 }
+.loction{
+    display: flex;
+    flex-direction: column;
+}
+
 .contact form input, .contact form textarea {
 display: block;
 width: 100%;
