@@ -66,8 +66,8 @@ const Contact = () => {
       
     </div>
     <Title title='Visit us at' />
-    <div>
-      
+    <div className='map container'>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3420149417752!2d85.31696127425404!3d27.70672452552117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb197ac4466e65%3A0xeddbb3f5c4ed807f!2sUdaan%20Education%20Infosys%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1719568837310!5m2!1sen!2snp" width="100%" height="100%" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </div>
   )
