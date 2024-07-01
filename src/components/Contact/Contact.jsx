@@ -39,7 +39,7 @@ const Contact = () => {
         <h3>send us a message <img src={msg_icon} alt="" /></h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magnam cumque impedit doloremque eaque animi, distinctio dolor aspernatur blanditiis ducimus quia asperiores cum exercitationem esse repellat rem pariatur ea voluptas!</p>
         <ul>
-          <li><img src={mail_icon} alt="" />udanneducation@gmail.com</li>
+          <li><img src={mail_icon} alt="" />ssd.udaaaneducation@gmail.com</li>
           <li><img src={phone_icon} alt="" />01-5916536, +977-9841174718</li>
           <li><img src={location_icon} alt="" /> <div className='location'>  <p>Kathmandu Metropolitan City 28, Kamaladi, Kathmandu, Nepal</p>
           <p> Shanta Marga, House no. 177</p>
@@ -50,8 +50,6 @@ const Contact = () => {
         <form onSubmit={onSubmit}>
           <label >Your Name</label>
           <input type="text" name='name' placeholder='Enter your name' required />
-          <label >Phone Numebr</label>
-          <input type="tel" name='phone' placeholder='Enter your Mobile Number' required />
           <label>Email Adress</label>
           <input type="text" name='Email' placeholder='Enter your Email Address' required />
           <label>Intrested Courese</label>
