@@ -1,91 +1,54 @@
-.testimonials{
-    margin: 80px auto;
-    padding: 0px 80px;
-    position: relative;
+.card{
+    height: 100%;
+    margin-top: 2rem;
+    border-radius: 20px;
+    background-color: #eef2ff;
 }
-.next-btn, .back-btn{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    padding: 15px;
-    width: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    background: #3954A4;
-}
-.back-btn{
-    right: auto;
-    left: 0;
-}
-.slider{
-    overflow: hidden;
-}
-.slider ul{
+.up-card {
     display: flex;
-    width: 200%;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-.slider ul li {
-    list-style: none;
-    width: 50%;
-    padding: 30px;
-}
-.slide {
-    box-shadow: 0 0 20px rgba( 0, 0, 0, 0.05);
-    padding: 40px;
-    border-radius: 10px;
-    color: #676767;
-    line-height: 1.4;
-    
-}
-.slide img {
-    width: 90px;
-    border-radius: 50%;
-    margin-right: 10px;
-    border: 2px solid #3954A4;
-}
-.user-info{
-    display: flex;
+    height: 40%;
+    background-color: #223a80;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    font-size: 15px;
+    border-radius: 20px;
 }
-.user-info h3 {
-    color: #3954A4;
+.up-card img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 50%;
 }
-/* media quiry */
+.down-card{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
 
-@media (max-width: 800px) {
-.testimonials{
-    padding: 0 40px;
-}
-.next-btn, .back-btn{
-    padding: 10px;
-    width: 35px;
-}
-.testimonials ul li {
-    padding: 10px;
-}
-.slide{
-    padding: 10px;
-}
-.slide img {
-    width: 50px;
-    border: 1px solid #3954A4;
-}
-}
-@media (max-width: 600px){
-    .user-info{
-        display: block;
-        margin-bottom: 10px;
-        font-size: 12px;
+    h1{
+        font-size: 28px;
+        color: #223a80;
+        text-transform: uppercase;
+        padding-top: 1rem;
     }
-    .user-info h3 {
+    h2{
+        font-size: 22px;
+        color: #223a80;
+        text-transform: uppercase;
+        padding-top: 1rem;
+    }
+    p{
         font-size: 16px;
+        color: #000000;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+        gap: 6px;
+        text-align: justify;
     }
-    .slider{
-        font-size: 12px;
+    img{
+        padding-top: 1rem;
+        max-width: 250px;
     }
 }

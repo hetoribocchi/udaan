@@ -40,6 +40,14 @@ a{
   width: 20px;
   margin-left: 10px;
 }
+.slick-slide > div {
+  margin: 0 10px;
+  padding-bottom: 10px;
+}
+.slick-arrow::before {
+ color: #223a80;
+ font-size: 25px;
+}
 
 
 /* mediea quiry */
@@ -65,6 +73,12 @@ a{
     .btn{
       padding: 8px 16px ;
     }
+    .slick-prev{
+      margin-left: 10px;
+}
+    .slick-next{
+      margin-right: 10px;
+}
 }
 @media (max-width: 768px){
     .container{
@@ -80,5 +94,9 @@ a{
       color: white;
       font-size: 12px;
     }
+    .slick-arrow {
+      visibility: hidden;
+     }
+
 }
 
