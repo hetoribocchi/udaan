@@ -6,8 +6,8 @@ const Hero = () => {
     <div className='hero container'>
           <div className='hero-text'>
               <h1>We ensure better education for a better world</h1>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, aliquam sit quo nobis inventore esse exercitationem quis porro deleniti explicabo dolorem? Velit, sit soluta. Quidem odit animi corrupti facere itaque.</p>
-              <button className='btn'>Explore More <img src={dark_arrow} alt="" /></button>
+              <p>Discover your path to global education excellence with Udaan Education. We specialize in guiding students to prestigious universities in Canada, UK, USA, and Australia. Let us help you achieve your academic aspirations and unlock a world of opportunities. Your journey begins here.</p>
+
       </div>
     </div>
   )

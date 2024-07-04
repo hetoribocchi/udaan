@@ -94,9 +94,12 @@ a{
       color: white;
       font-size: 12px;
     }
-    .slick-arrow {
-      visibility: hidden;
-     }
+    .slick-prev{
+      margin-left: 10px;
+}
+    .slick-next{
+      margin-right: 20px;
+}
 
 }
 

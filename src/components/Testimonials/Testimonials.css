@@ -15,7 +15,7 @@
 .up-card img {
     height: 200px;
     width: 200px;
-    margin: auto;
+    margin: 10px auto;
     border: 2px solid white;
     border-radius: 50%;
 }
@@ -49,6 +49,11 @@
     }
     img{
         padding-top: 1rem;
-        max-width: 250px;
+        max-height: 70px;
     }
 }
+.testimonial{
+    margin-bottom: 3rem;
+}
+
+/* media quiry */

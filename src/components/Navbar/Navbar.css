@@ -50,7 +50,7 @@ nav ul li:hover {
     height: 2px;
     background: white;
     position: absolute;
-    bottom: -80%;
+    bottom: -60%;
     right: 0;
     transition: all 0.2s;
   }
@@ -64,7 +64,7 @@ nav ul li:hover:after{
     height: 2px;
     background: white;
     position: absolute;
-    bottom: -80%;
+    bottom: -60%;
     right: 0;
     transition: all 0.2s;
 }
@@ -217,21 +217,9 @@ nav ul li:hover:after{
     }
 
     .sub-nav{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        background-color: #3954A4;
-        width: 100%;
-        height: 100%;
-        right: 0;
-        bottom: 100%;
-        left: 0;
-        z-index: 999999;
-        opacity: 1;
-        color: white;
-        transition: ease-in-out 0.2s;
+        bottom: 100;
+        height: 200px;
+        right: 200px;
     }
     .sub-nav li {
         display: block;
@@ -266,6 +254,11 @@ nav ul li:hover:after{
         content: none;
         color: #223a80;
     }
-   
+    .test-sub-nav li{
+        margin: 5px 10px;
+        font-size: 16px; 
+        padding: 0 5px;
+    }
+
     
 }
