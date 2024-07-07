@@ -63,8 +63,6 @@ const Australia = () => {
           <div className='option-text'>
             <h2>Scholarships</h2>
             <p>
-
-              ChatGPT
               Australia offers several scholarships and financial aid opportunities to international students, making it an attractive destination for higher education. Many Australian universities provide merit-based scholarships specifically designed for international students, covering tuition fees partially or fully. These scholarships are often awarded based on academic excellence, research potential, or specific criteria related to the field of study.
             </p>
             <p>In addition to university-specific scholarships, international students can also explore scholarships offered by the Australian government, such as the Australia Awards, which aim to promote development and foster links between Australia and its global partners. These awards typically cover tuition fees, living expenses, and travel costs for recipients studying at Australian universities.</p>

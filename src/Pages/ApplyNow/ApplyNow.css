@@ -43,8 +43,8 @@
 }
 .adress-information {
     display: grid;
-    grid-template-columns: repeat(3, 32%);
-    grid-template-rows: repeat(2, 100%);
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: repeat(3, 100%);
     justify-content: space-between;
     margin: 2rem auto;
     max-width: 90%;
@@ -96,4 +96,31 @@
 .i-box label{
     color: #3954A4;
     padding-bottom: 10px;
+}
+/* @media quiry */
+@media (max-width: 840px) {
+    .adress-information {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        /* grid-template-rows: repeat(3, 100%); */
+        justify-content: space-between;
+        margin: 2rem auto;
+        max-width: 90%;
+       
+    }
+    .personal-information {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        /* grid-template-rows: repeat(2, 100%); */
+        justify-content: space-between;
+        margin: 2rem auto;
+        max-width: 90%;
+       
+    }
+}
+@media (max-width: 500px) {
+    .personal-information{
+        grid-template-columns: repeat(1, 100%);
+
+    }
 }

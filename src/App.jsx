@@ -22,7 +22,15 @@ import PTE from './Pages/TestPreparation/PTE/PTE';
 import SAT from './Pages/TestPreparation/SAT/SAT';
 import TOEFL from './Pages/TestPreparation/TOEFL/TOEFL';
 import GRE from './Pages/TestPreparation/GRE/GRE';
-const router = createBrowserRouter([
+import ScrollToTop from './ScrollToTop';
+
+
+  
+
+
+const App = () => {
+ 
+  const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
@@ -80,15 +88,12 @@ const router = createBrowserRouter([
     element: <GRE/>,
   },
 ])
-
-  
-
-
-const App = () => {
   return (
+    
     <div>
+      {/* <ScrollToTop/> */}
       <RouterProvider router={router} />
-      
+
     </div>
 
   )
