@@ -5,55 +5,62 @@ import { useState } from 'react'
 import menu_icon from '../../assets/menu-icon.png'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-const Navbar = () => {
-  const [sticky, setSticky] = useState(false);
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      window.scrollY > 50 ? setSticky(true) : setSticky(false)
-    })
-  }, [])
-  const [mobileMenu, setMobileMenu] = useState(false)
-  const toogleMenu = ()=>{
-    mobileMenu? setMobileMenu(false): setMobileMenu(true)
-  }
-  let menuRef = useRef()
- useEffect(()=>{
-  let handler = (e)=>{
-    if (!menuRef.current.contains(e.target)) {
-      setMobileMenu(false)
-      // console.log(menuRef.current);
-    }
-  }
-  document.addEventListener("mousedown",handler)
- }
-)
+import { RiArrowDropDownLine } from "react-icons/ri";
+import hamburger from '../../assets/Hamburger-icon.svg'
 
+
+const Navbar = () => {
+  const [mobileNav, setMobileNav] = useState(false)
+  let menuRef = useRef()
+  
+  useEffect(()=>{
+    let handler = (e)=>{
+      if (!menuRef.current.contains(e.target)) {
+        setMobileNav(false)
+      }
+    }
+    document.addEventListener("mousedown", handler)
+    return ()=>{
+      document.removeEventListener("mousedown", handler)
+    }
+  })
   return (
-    <nav className={`container ${sticky ? 'small-nav' : ''}`} ref={menuRef}>
-      <img src={logo} alt="" className='logo' />
-      <ul className={mobileMenu? '': "hide-mobile-menu"}>
-        <li><NavLink className={(e)=>{return e.isActive? "active": ""} } to = "/"> Home</NavLink></li>
-        <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/programs"> Program</NavLink></li>
-        <li> <NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/about-us">About us</NavLink></li>
-         <li className='study-abroad'> Study Abroad 
-         <ul className='sub-nav'>
-          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to= "/canada"> CANADA</NavLink></li>
-          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to="/uk"> UK</NavLink></li>
-          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to='/usa'> USA</NavLink></li>
-          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to='/australia'> AUSTRALIA</NavLink></li>
-         </ul></li>
-        <li className='test-preparation'> Test Preparation
-        <ul className='test-sub-nav'>
-          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to= "/IELTS"> IELTS</NavLink></li>
-          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to="/PTE"> PTE</NavLink></li>
-          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to='/TOEFL'> TOEFL</NavLink></li>
-          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to='/SAT'> SAT</NavLink></li>
-          <li> <NavLink className={(e)=>{return e.isActive? "active": ""} } to='/GRE'> GRE</NavLink></li></ul>
-        </li>
-         <li><NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/contact-us">Contact us</NavLink> </li>
-          <li><NavLink className={(e)=>{return e.isActive? "active": ""}} to = "/apply-now">Apply Now </NavLink></li>
-      </ul>
-       <img src={menu_icon} alt="" className='menu-icon' onClick={toogleMenu}  />
+    <nav>
+      <div className='nav'>
+        <div className="nav-elements container">
+          <div className='logo'>
+            <Link to='/'><img src={logo} alt="" /></Link>
+          </div>
+          <div className={`links ${mobileNav? "unhide": ""}`} ref={menuRef}>
+            <ul>
+              <li> <NavLink to='/'> Home</NavLink></li>
+              <li> <NavLink to='/programs'> Programs <RiArrowDropDownLine size={30} /> </NavLink></li>
+              <li className='abroad-study'>Abroad Study <RiArrowDropDownLine size={30} />
+                <div className="abroad-nav"  >
+                  <li> <NavLink to='/canada'>Canada</NavLink> </li>
+                  <li><NavLink to='/usa'>USA</NavLink></li>
+                  <li><NavLink to='/uk'>UK</NavLink></li>
+                  <li><NavLink to='/australia'>Australia</NavLink></li>
+                  <li><NavLink to='/new-zealand'>New Zealand</NavLink></li>
+                </div></li>
+              <li className='test-preparation' >Test Preaparation <RiArrowDropDownLine size={30} />
+                <div className="test-nav"  >
+                  <li><NavLink to='/ielts'>  IELTS</NavLink></li>
+                  <li><NavLink to='/pte'>  PTE</NavLink></li>
+                  <li><NavLink to='/toefl'>  TOEFL</NavLink></li>
+                  <li><NavLink to='/sat'>  SAT</NavLink></li>
+                  <li><NavLink to='/gre'>  GRE</NavLink></li>
+                </div></li>
+              <li><NavLink to='/about-us'>About Us</NavLink></li>
+              <li><NavLink to='/contact-us'>Contact Us</NavLink></li>
+              <li><NavLink to='/apply-now'>Apply Now</NavLink></li>
+            </ul>
+            <div className='hamburger'>
+          <img src={hamburger} onClick={()=>{setMobileNav(!mobileNav) }}/> </div>
+          </div></div>
+
+        
+      </div>
     </nav>
   )
 }
