@@ -44,7 +44,7 @@ const GRE = () => {
           <img src={gre_3} alt="" />
         </div>
         <div className='info-gre-text'>
-          <h3>Why take a gre test?</h3>
+          <h3>Why take a GRE test?</h3>
           <p>The GRE is used by many graduate schools to determine whether a student is a qualified candidate for their program. If a student is planning on graduate school, business school, or even in some cases law school, the GRE is often an essential part of their application.</p>
 
         </div>

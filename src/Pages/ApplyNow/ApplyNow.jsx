@@ -6,26 +6,16 @@ import { useState } from 'react'
 
 
 const ApplyNow = () => {
-  const [englishTest, setEnglishTest] = useState (true)
-  function ieltsCheck() {
-    setEnglishTest(true)
-  }
-  function pteCheck() {
-    setEnglishTest(false)
-    
-  }
-  if (englishTest==true) {
-    console.log('ielts');
-  } else {
-    console.log("pte");
-  }
-  console.log('reredner');
+function onSubmit() {
+  ""
+}
   return (
-    <div className='container'>
+    <div >
         <Navbar/>
+        <div className='container'>
        <div className='apply-background container'>
           <h1>Udaan Online Application Form</h1>
-          <Form>
+          <Form onSubmit={onSubmit}>
             <div className='info-box'>
                 <h1>Personal Details</h1>
           <div className='personal-information'>
@@ -42,15 +32,19 @@ const ApplyNow = () => {
                 </div>
                 <div className='i-box'>
                 <label  className = 'required'>Date of Birth</label>
-                <input type="date" name='Last Name' placeholder='' required />
+                <input type="date" name='Date of Birth' placeholder='' required />
                 </div>
                 <div className='i-box'>
                 <label className='required' >Mobile Number</label>
-                <input type="phone-number" name='Last Name' placeholder='Enter Your Mobile Number' required />
+                <input type="phone-number" name='Mobile Number' placeholder='Enter Your Mobile Number' required />
                 </div>
                 <div className='i-box'>
                 <label className = 'required' >Email Adress</label>
                 <input type="Email" name='Last Name' placeholder='Enter Email Adress' required />
+                </div>
+                <div className='i-box'>
+                <label  className = '' >Passport </label>
+                <input type="file" accept='.jpg, .jpeg, .png, .pdf' placeholder='' />
                 </div>
                 </div>
                 </div>
@@ -64,21 +58,20 @@ const ApplyNow = () => {
                 </div>
               <div className='i-box'>
                 <label  className = 'required'>Ward No.</label>
-                <input type="text" name='First Name' placeholder='' required />
+                <input type="text" name='ward' placeholder='' required />
                 </div>
               <div className='i-box'>
                 <label className = 'required' >Province</label>
-                <input type="text" name='First Name' placeholder='' required />
+                <input type="text" name='Province' placeholder='' required />
                 </div>
               <div className='i-box'>
-                <label  className = 'required'>Vdc/R.Munipality/Municipality/S.M.C/M.C</label>
-                <input type="text" name='First Name' placeholder='' required />
+                <label  className = 'required'>V.D.C./R.Munipality/Municipality/S.M.C/M.C</label>
+                <input type="text" name='V.D.C./R.Munipality/Municipality/S.M.C/M.C' placeholder='' required />
                 </div>
               <div className='i-box'>
                 <label >Town</label>
-                <input type="text" name='First Name' placeholder=''/>
+                <input type="text" name='town' placeholder=''/>
                 </div>
-
                 </div>
                 </div>
                 <div className='info-box'>
@@ -92,6 +85,8 @@ const ApplyNow = () => {
                 <input type="file" accept='.jpg, .jpeg, .png, .pdf' placeholder='' required />
                 <label  className = 'required' >Character Certificate </label>
                 <input type="file" accept='.jpg, .jpeg, .png, .pdf' placeholder='' required />
+                <label  >Others</label>
+                <input type="file" accept='.jpg, .jpeg, .png, .pdf' placeholder='' required />
                 
                 </div>
               <div className='i-box'>
@@ -102,7 +97,8 @@ const ApplyNow = () => {
                 <input type="file" accept='.jpg, .jpeg, .png, .pdf' placeholder=''  />
                 <label  className = '' >Character Certificate </label>
                 <input type="file" accept='.jpg, .jpeg, .png, .pdf' placeholder='' />
-                
+                <label  >Others</label>
+                <input type="file" accept='.jpg, .jpeg, .png, .pdf' placeholder='' required />
                 </div>
             
               <div className='i-box'>
@@ -116,7 +112,8 @@ const ApplyNow = () => {
                 <input type="file" accept='.jpg, .jpeg, .png, .pdf' placeholder='' />
                 <label  className = '' >Degree Certificate </label>
                 <input type="file" accept='.jpg, .jpeg, .png, .pdf' placeholder='' />
-                
+                <label  >Others</label>
+                <input type="file" accept='.jpg, .jpeg, .png, .pdf' placeholder='' required />
                 </div>
                 
 
@@ -127,20 +124,17 @@ const ApplyNow = () => {
                 <h1>English Proficency Test</h1>
           <div className='english-information'>
               <div className='i-tick'>
-                <div>
-                  <p> IELTS </p><input type="checkbox" defaultChecked={englishTest? true: false}  onClick={ieltsCheck}/>
-                </div>
-                <div>
-                  <p> PTE </p><input type="checkbox"defaultChecked={englishTest? false: true} onClick={pteCheck} />
+                <div className='i-box'>
+                <label  >IELTS/PTE Certificate</label>
+                <input type="file" accept='.jpg, .jpeg, .png, .pdf' placeholder='' required />
                 </div>
                 </div>
-             
-
                 </div>
                 </div>
+                 <button className='submit-btn btn dark-btn' type='submit'> Sumbit From</button>
                 </div>
             </Form>
-          
+            </div>
        </div>
         </div>
   )

@@ -7,25 +7,27 @@
 .gallery {
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 23%);
-    align-items: center;
+    grid-template-columns: repeat(5, 19%);
+    align-items: top;
     justify-content: space-between; 
     margin-bottom: 10px;
 }
 .gallery-com{
     max-width: 100%;
+   
 }
 .gallery-com p {
-    font-size: 24px;
+    
+    font-size: 18px;
     font-weight: 600;
     color: #3954A4;
     text-transform: uppercase;
 }
 
 .gallery-com img {
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
-
+    padding-bottom: 1rem;
 }
 
 

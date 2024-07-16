@@ -101,12 +101,12 @@ const ProgramPage = () => {
                   <img src={program_3} alt="" />
                 </div>
                 <div className='courses-caption'>
-                <h3>Post Graduate Certificate/Master's Degree</h3>
-                <p>A Master's Degree/Post-Graduate Cretificate  for international students is an advanced academic program designed to provide in-depth knowledge and expertise in a specific field of study. Tailored to meet the needs of students from around the world, these programs offer an opportunity to further specialize in an area of interest, enhance career prospects, and immerse oneself in a diverse and multicultural learning environment</p>
+                <h3>Post-Graduate Certificate/Master's Degree</h3>
+                <p>A Post-Graduate Cretificate /Master's Degree for international students is an advanced academic program designed to provide in-depth knowledge and expertise in a specific field of study. Tailored to meet the needs of students from around the world, these programs offer an opportunity to further specialize in an area of interest, enhance career prospects, and immerse oneself in a diverse and multicultural learning environment</p>
                 <p><ul>
                 <h4>Key Features:</h4>
                   <li>
-                  <h4>Specialized Learning:</h4> Master's/Post-Graduate programs offer specialized coursework and research opportunities, allowing students to delve deep into their chosen field and develop expertise in specific areas of interest.
+                  <h4>Specialized Learning:</h4> Post-Graduate/Master's programs offer specialized coursework and research opportunities, allowing students to delve deep into their chosen field and develop expertise in specific areas of interest.
                   </li>
                   <li>
                   <h4>Global Perspective:</h4> With a diverse student body and faculty from various backgrounds, international students gain a global perspective, enriching their academic experience and fostering cross-cultural understanding.

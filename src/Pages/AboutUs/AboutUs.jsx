@@ -29,38 +29,44 @@ const AboutUs = () => {
         </div>
         </div>
         <Title title= "our Services"/>
+        
         <div className='our-service'>
-        <div className='service'>
-            <div className='service-item'><img src= {accommodation} alt="" />
-            <h2>ACCOMMODATION AND TRAVEL ARRANGEMENT</h2>
-            <p>After successful approval of the visa, we guide our students in accommodation travel arrangements in the request of the students. It includes the situation student have to face after arrival in a new environment of a foreign country plus accommodation arrangement</p>
-          </div></div>
-        <div className='service'>
-            <div className='service-item'><img src= {pre_depature} alt="" />
-            <h2>INTERVIEW PREPARATION AND PRE- DEPARTURE BRIEFING</h2>
-            <p>Udaan Education pre-departure briefings help you prepare for departure and arrival in Abroad. At the briefing, you will receive valuable information about living in Abroad, life as a student at your institution, tips on adapting to the culture, and dealing with homesickness. You will also have the opportunity to network with other students, including alumni, current students, and future classmates.</p>
-          </div></div>
-        <div className='service'>
-            <div className='service-item'><img src= {visa} alt="" />
-            <h2>Visa-Documentition guidance</h2>
-            <p>Applying for a student visa needs to go through lots of verification and documentation, but Ecstasy's trained visa counselor are expert who will guide you through all the visa application. Are you looking for a step by step visa procedure? We are here for you. We provide complete guidance in every step for your most....</p>
-          </div></div>
-        <div className='service'>
-            <div className='service-item'><img src= {admission} alt="" />
-            <h2>INFORMATION ON ADMISSION REQUIREMENT</h2>
-            <p>Every country has their own criterion for international students to be admitted in their institutions. Some of those requirements might include: a minimum level of completed prior studies and grades specific prerequisite courses proof of language proficiency in the language of instruction standardized test scores a portfolio or work experience.</p>
-          </div></div>
         <div className='service'>
             <div className='service-item'><img src= {study_abroad} alt="" />
             <h2>STUDY ABROAD</h2>
             <p>After determining the course or field of study you wish to pursue, the next step is to determine where you want to study. However, with dozens of learning institutions and education providers offering a wide range of.</p>
           </div></div>
-        <div className='service'>
+          <div className='service'>
             <div className='service-item'><img src= {counselling} alt="" />
             <h2>CAREER COUNSELLING</h2>
             <p>Whether you've finished school, your Bachelor's degree or a Master's - in the end, you're always left with the sa Feel free to ask queries! mp question with an infinite number or answers. Deciding on one of them can be difficult. After.</p>
           </div>
           </div>
+          <div className='service'>
+            <div className='service-item'><img src= {admission} alt="" />
+            <h2>INFORMATION ON ADMISSION REQUIREMENT</h2>
+            <p>Every country has their own criterion for international students to be admitted in their institutions. Some of those requirements might include: a minimum level of completed prior studies and grades specific prerequisite courses proof of language proficiency in the language of instruction standardized test scores a portfolio or work experience.</p>
+          </div></div>       
+          <div className='service'>
+            <div className='service-item'><img src= {visa} alt="" />
+            <h2>Visa-Documentition guidance</h2>
+            <p>Applying for a student visa needs to go through lots of verification and documentation, but Ecstasy's trained visa counselor are expert who will guide you through all the visa application. Are you looking for a step by step visa procedure? We are here for you. We provide complete guidance in every step for your most....</p>
+          </div></div>
+          <div className='service'>
+            <div className='service-item'><img src= {pre_depature} alt="" />
+            <h2>INTERVIEW PREPARATION AND PRE- DEPARTURE BRIEFING</h2>
+            <p>Udaan Education pre-departure briefings help you prepare for departure and arrival in Abroad. At the briefing, you will receive valuable information about living in Abroad, life as a student at your institution, tips on adapting to the culture, and dealing with homesickness. You will also have the opportunity to network with other students, including alumni, current students, and future classmates.</p>
+          </div></div>
+           <div className='service'>
+            <div className='service-item'><img src= {accommodation} alt="" />
+            <h2>ACCOMMODATION AND TRAVEL ARRANGEMENT</h2>
+            <p>After successful approval of the visa, we guide our students in accommodation travel arrangements in the request of the students. It includes the situation student have to face after arrival in a new environment of a foreign country plus accommodation arrangement</p>
+          </div></div>
+        
+        
+      
+       
+      
         </div>
         <Fotter/>
     </div>

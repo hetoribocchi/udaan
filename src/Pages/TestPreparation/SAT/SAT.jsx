@@ -49,7 +49,7 @@ const SAT = () => {
             <img src={sat_3} alt="" />
           </div>
           <div className='info-sat-text'>
-            <h3>Why take a sat test?</h3>
+            <h3>Why take a SAT test?</h3>
             <p>A high SAT score will increase the chances of admission in top Business Schools There are good chances of getting some kind of financial assistance with a high SAT score Visa Officers also give weightage to high SAT scores while considering Visa applications </p>
 
           </div>

@@ -37,7 +37,12 @@ const Contact = () => {
     <div className="contact">
       <div className="contact-col">
         <h3>send us a message <img src={msg_icon} alt="" /></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magnam cumque impedit doloremque eaque animi, distinctio dolor aspernatur blanditiis ducimus quia asperiores cum exercitationem esse repellat rem pariatur ea voluptas!</p>
+        <p className='msg'>Whether you're dreaming of studying abroad or seeking expert guidance on educational opportunities overseas, we're here to assist you every step of the way. Our team of experienced consultants is dedicated to helping you achieve your academic and career aspirations.</p>
+
+<p className='msg'>Please feel free to contact us with any questions, concerns, or inquiries you may have. You can reach us via the contact form. We strive to provide personalized and comprehensive support to ensure your journey towards international education is smooth and successful.</p>
+
+
+<p className='msg'>Thank you for considering Udaan Education Infosys as your partner in pursuing educational excellence abroad. We look forward to hearing from you and helping you turn your aspirations into reality.</p>
         <ul>
           <li><img src={mail_icon} alt="" />ssd.udaaaneducation@gmail.com</li>
           <li><img src={phone_icon} alt="" />01-5916536, +977-9841174718</li>
@@ -48,13 +53,13 @@ const Contact = () => {
       </div>
       <div className="contact-col">
         <form onSubmit={onSubmit}>
-          <label >Your Name</label>
-          <input type="text" name='name' placeholder='Enter your name' required />
+          <label >Your Full Name</label>
+          <input type="text" name='name' placeholder='Enter your Full Name' required />
           <label>Email Adress</label>
           <input type="text" name='Email' placeholder='Enter your Email Address' required />
-          <label>Intrested Courese</label>
+          <label>Interested Course</label>
           <input type="text" name='Course' placeholder='Write The Course You are Intrested In' required />
-          <label>Write your msg here</label>
+          <label>Write your message here</label>
           <textarea name="message" rows="6" placeholder='Enter Your message' required></textarea>
           <button type='submit' className='btn dark-btn'> Submit Now <img src={white_arrow} alt="" /></button>
 

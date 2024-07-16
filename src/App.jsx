@@ -23,6 +23,7 @@ import SAT from './Pages/TestPreparation/SAT/SAT';
 import TOEFL from './Pages/TestPreparation/TOEFL/TOEFL';
 import GRE from './Pages/TestPreparation/GRE/GRE';
 import ScrollToTop from './ScrollToTop';
+import NewZealand from './Pages/NewZealand/NewZealand';
 
 
   
@@ -86,6 +87,10 @@ const App = () => {
   {
     path: "/GRE",
     element: <GRE/>,
+  },
+  {
+    path: "/new-zealand",
+    element: <NewZealand/>,
   },
 ])
   return (

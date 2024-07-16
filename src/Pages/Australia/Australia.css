@@ -6,7 +6,7 @@
     aspect-ratio: 16/5;
     background: linear-gradient( rgba(22.4, 32.9, 64.3, 0.7), rgba(22.4, 32.9, 64.3, 0.7)), url('../../assets/australia.jpg');
     background-size:cover;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .background-australia-text{
@@ -173,7 +173,8 @@
 }
 @media (max-width: 678px) {
     .background-australia{
-        margin-top: 70px;
+        margin-top: 100px;
+        aspect-ratio: 9/5;
     }
     .background-australia-text p{
         font-size: 12px;
@@ -187,4 +188,38 @@
     .background-australia-text{
         max-width: 90%;
     }
+    .info-australia {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+    }
+    .info-australia-img {
+        float: none;
+        order: 1;
+        max-width: 100%;
+    }
+    .info-australia-img img {   
+        width: 100%;
+        padding-left: 0;
+        margin: auto;
+    }
+    .australia-option{
+        display: flex;
+        flex-direction: column;
+    }
+    .australia-option img {
+        float: none;
+        order: 1;
+        max-width: 100%;
+    }
+    .australia-option-dark{
+        display: flex;
+        flex-direction: column;
+    }
+    .australia-option-dark img {
+        float: none;
+        order: 1;
+        max-width: 100%;
+    }
+
 }

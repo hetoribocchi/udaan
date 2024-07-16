@@ -12,6 +12,9 @@
 }
 .about-right{
     flex-basis: 56%;
+    p{
+        text-align: justify;
+    }
 }
 .about-img{
     width: 100%;
