@@ -6,6 +6,7 @@ import {
   RouterProvider,
   Route,
   Link,
+  Outlet,
 } from "react-router-dom";
 import ApplyNow from './Pages/ApplyNow/ApplyNow';
 import Campus from './components/Campus/Campus';
@@ -23,81 +24,17 @@ import SAT from './Pages/TestPreparation/SAT/SAT';
 import TOEFL from './Pages/TestPreparation/TOEFL/TOEFL';
 import GRE from './Pages/TestPreparation/GRE/GRE';
 import ScrollToTop from './ScrollToTop';
-import NewZealand from './Pages/NewZealand/NewZealand';
 
-
-  
 
 
 const App = () => {
  
-  const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home/>,
-  },{
-    path: "/apply-now",
-    element: <ApplyNow/>,
-  },
-  {
-    path: "/programs",
-    element: <ProgramPage/>,
-  },
   
-  {
-    path: "/contact-us",
-    element: <ContactUs/>,
-  },
-  {
-    path: "/about-us",
-    element: <AboutUs/>,
-  },
-  {
-    path: "/canada",
-    element: <Canada/>,
-  },
-  {
-    path: "/uk",
-    element: <UK/>,
-  },
-  {
-    path: "/usa",
-    element: <USA/>,
-  },
-  {
-    path: "/australia",
-    element: <Australia/>,
-  },
-  {
-    path: "/IELTS",
-    element: <IELTS/>,
-  },
-  {
-    path: "/PTE",
-    element: <PTE/>,
-  },
-  {
-    path: "/SAT",
-    element: <SAT/>,
-  },
-  {
-    path: "/TOEFL",
-    element: <TOEFL/>,
-  },
-  {
-    path: "/GRE",
-    element: <GRE/>,
-  },
-  {
-    path: "/new-zealand",
-    element: <NewZealand/>,
-  },
-])
   return (
     
     <div>
-      {/* <ScrollToTop/> */}
-      <RouterProvider router={router} />
+      <ScrollToTop/>
+      <Outlet/>
 
     </div>
 

@@ -20,7 +20,7 @@ function onSubmit() {
                 <h1>Personal Details</h1>
           <div className='personal-information'>
               <div className='i-box'>
-                <label  className = 'required'>Frist Name</label>
+                <label  className = 'required'>First Name</label>
                 <input type="text" name='First Name' placeholder='Enter your First Name' required />
                 </div>
               <div className='i-box'>
