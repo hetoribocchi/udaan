@@ -75,6 +75,7 @@
 .i-box {
     display: flex;
     flex-direction: column;
+    padding-bottom: 0;
 }
 .i-box h2 {
     font-size: 18px;
