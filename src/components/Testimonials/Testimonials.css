@@ -20,7 +20,6 @@
     border-radius: 50%;
 }
 .down-card{
-    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,5 +57,15 @@
 .testimonial{
     margin-bottom: 3rem;
 }
+.slick-dots{
+    visibility: hidden;
+}
 
 /* media quiry */
+@media (max-width:1200px) {
+    .down-card{
+        height: 350px;
+        p{
+            font-size: 12px;
+        }
+    }}

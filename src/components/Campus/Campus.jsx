@@ -11,18 +11,19 @@ const Campus = () => {
   return (
     <div className='campus'>
        <div className="gallery">
-       <Link to="/canada"><div className='gallery-com'>
-          <img src={study_canada} alt="" />
+       <div className='gallery-com'>
+       <Link to="/canada"><div className='gallery-img'><img src={study_canada} alt="" /></div>
         <p> STUDY IN CANADA</p>
-        </div></Link>
-        <Link to="/usa"><div className='gallery-com'><img src={study_usa} alt="" />
-        <p> STUDY IN USA</p></div></Link>
-        <Link to="/uk"><div className='gallery-com'><img src={study_uk} alt="" />
-        <p> STUDY IN UK</p></div></Link>
-        <Link to="/australia"><div className='gallery-com'><img src={study_australia} alt="" />
-        <p> STUDY IN Australia</p></div></Link>
-        <Link to="/new-zealand"><div className='gallery-com'><img src={study_newzealand} alt="" />
-        <p> STUDY IN</p> <p> NEW ZEALAND</p></div></Link>
+        </Link> </div>
+        <div className='gallery-com'><Link to="/usa"> <div className='gallery-img'><img src={study_usa} alt="" /></div>
+        <p> STUDY IN USA</p></Link></div>
+        <div className='gallery-com'> <Link to="/uk"><div className='gallery-img'><img src={study_uk} alt="" /></div>
+        <p> STUDY IN UK</p></Link></div>
+        <div className='gallery-com'><Link to="/australia"> <div className='gallery-img'><img src={study_australia} alt="" /></div>
+        <p> STUDY IN Australia</p></Link></div>
+        <div className='gallery-com'><Link to="/new-zealand"> <div   
+        className='gallery-img'><img src={study_newzealand} alt="" /></div>
+        <p> STUDY IN</p> <p> NEW ZEALAND</p></Link></div> 
       </div>
 
     </div>
