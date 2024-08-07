@@ -131,7 +131,7 @@ function onSubmit() {
                 </div>
                 </div>
                 </div>
-                 <button className='submit-btn btn dark-btn' type='submit'> Sumbit From</button>
+                 <button className='submit-btn btn dark-btn' type='submit'> Submit Form</button>
                 </div>
             </Form>
             </div>
