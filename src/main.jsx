@@ -19,13 +19,15 @@ import TOEFL from './Pages/TestPreparation/TOEFL/TOEFL';
 import GRE from './Pages/TestPreparation/GRE/GRE';
 import ScrollToTop from './ScrollToTop';
 import NewZealand from './Pages/NewZealand/NewZealand';
+import Home from './Pages/Home/Home.jsx';
+import Event from './Pages/Event/Event';
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Pages/Home/Home.jsx';
+
  const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
@@ -45,6 +47,7 @@ import Home from './Pages/Home/Home.jsx';
       <Route path='TOEFL' element ={<TOEFL/>}/>
       <Route path='GRE' element ={<GRE/>}/>
       <Route path='new-zealand' element ={<NewZealand/>}/>
+      <Route path='event' element ={<Event/>}/>
     </Route>
   )
  )

@@ -25,3 +25,20 @@
         margin-top: 10px;
     }
 }
+@media (max-width:400px) {
+    .fotter{
+        display: block;
+        text-align: center;
+        p{
+            font-size: 12px;
+        }
+    }
+    .fotter ul li {
+        font-size: 12px;
+        margin: 6px;
+    }
+    .fotter ul {
+        margin-top: 6px;
+        font-size: 12px;
+    }
+}
