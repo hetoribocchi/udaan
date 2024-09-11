@@ -52,8 +52,8 @@ const Navbar = () => {
                 </div></li>
               <li><NavLink to='/about-us'>About Us</NavLink></li>
               <li><NavLink to='/contact-us'>Contact Us</NavLink></li>
-              {/* <li><NavLink to='/apply-now'>Apply Now</NavLink></li> */}
-              <li><NavLink to='/event'>Event</NavLink></li>
+              <li><NavLink to='/apply-now'>Apply Now</NavLink></li>
+              {/* <li><NavLink to='/event'>Event</NavLink></li> */}
             </ul>
             <div className='hamburger'>
           <img src={hamburger} onClick={()=>{setMobileNav(!mobileNav) }}/> </div>

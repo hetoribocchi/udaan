@@ -44,7 +44,7 @@ const Contact = () => {
 
 <p className='msg'>Thank you for considering Udaan Education Infosys as your partner in pursuing educational excellence abroad. We look forward to hearing from you and helping you turn your aspirations into reality.</p>
         <ul>
-          <li><img src={mail_icon} alt="" />ssd.udaaaneducation@gmail.com</li>
+          <li><img src={mail_icon} alt="" />ssd@udaaneducation.edu.np</li>
           <li><img src={phone_icon} alt="" />01-5916536, +977-9841174718</li>
           <li><img src={location_icon} alt="" /> <div className='location'>  <p>Kathmandu Metropolitan City 28, Kamaladi, Kathmandu, Nepal</p>
           <p> Shanta Marga, House no. 177</p>
